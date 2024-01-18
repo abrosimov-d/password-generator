@@ -10,7 +10,7 @@ import Generator from './Generator';
 
 function App() {
   const [seedText, setSeedText] = useState('\n\n\n                Move mouse here to seed \n\n\n')
-  const [password, setPassword] = useState('123');
+  let [password, setPassword] = useState('');
 
 
   useEffect(() => {
@@ -20,7 +20,10 @@ function App() {
   }, []);          
 
   function onPEClick() {
-    //console.log();
+    let generator = new Generator();
+    let password = generator.generate();
+    setPassword(password);
+    navigator.clipboard.writeText(password);
   }
 
   return (
