@@ -1,0 +1,48 @@
+body {
+  background: #e1ebec;
+
+}
+
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+  justify-items: center;
+  padding: 10px;
+}
+
+.sv {
+  font-size: 12px;
+}
+
+.password-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.pe-checkbox {
+  justify-self: start;
+}
+
+.pe-line {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 96px;
+}
